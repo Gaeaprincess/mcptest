@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="header">Product List</view>
+  <view class="product-list">
+    <view class="product-item" wx:for="{{products}}" wx:key="id">
+      <image class="product-img" src="{{item.image}}" mode="aspectFill"></image>
+      <view class="product-info">
+        <view class="product-name">{{item.name}}</view>
+        <view class="product-price">¥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
